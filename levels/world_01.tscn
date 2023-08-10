@@ -1,8 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://n3rmq3iajyxs"]
+[gd_scene load_steps=17 format=3 uid="uid://n3rmq3iajyxs"]
 
 [ext_resource type="Texture2D" uid="uid://dy776ul514iwd" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Terrain (16 x 16).png" id="1_t5t4u"]
 [ext_resource type="Texture2D" uid="uid://dj1bktoafq7hh" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Autumn_entities (16 x 16).png" id="2_5ukit"]
 [ext_resource type="PackedScene" uid="uid://b8s2hv0lsmord" path="res://actors/player.tscn" id="3_c8jcg"]
+[ext_resource type="PackedScene" uid="uid://d4shs7xx6oyb" path="res://prefabs/coin.tscn" id="3_vldaw"]
 [ext_resource type="Texture2D" uid="uid://0t8v0ebi88ux" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/6 - Distant_trees.png" id="4_ol63t"]
 [ext_resource type="Texture2D" uid="uid://dmjtb4fkm2shs" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/5 - Tree_row_BG_2.png" id="5_83pyl"]
 [ext_resource type="Texture2D" uid="uid://x6rjyxddh6g8" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/4 - Tree_row_BG_1.png" id="6_fh04p"]
@@ -265,6 +266,29 @@ layer_1/y_sort_enabled = false
 layer_1/y_sort_origin = 0
 layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array(851980, 65537, 5, 983057, 65537, 1, 983068, 65537, 1, 1048603, 196609, 5, 1048605, 196609, 5, 1048594, 196609, 5, 1048592, 196609, 5, 983077, 65537, 1, 1048609, 65537, 5, 983044, 65537, 1, 917526, 65537, 1, 1048617, 917505, 4, 983081, 917505, 3, 983082, 983041, 3, 983083, 1048577, 3, 983084, 1114113, 3, 983085, 1179649, 3, 1048621, 1179649, 4)
+
+[node name="coins" type="Node2D" parent="."]
+
+[node name="coin" parent="coins" instance=ExtResource("3_vldaw")]
+position = Vector2(440, 160)
+
+[node name="coin2" parent="coins" instance=ExtResource("3_vldaw")]
+position = Vector2(392, 160)
+
+[node name="coin3" parent="coins" instance=ExtResource("3_vldaw")]
+position = Vector2(120, 32)
+
+[node name="coin4" parent="coins" instance=ExtResource("3_vldaw")]
+position = Vector2(72, 64)
+
+[node name="coin5" parent="coins" instance=ExtResource("3_vldaw")]
+position = Vector2(152, 96)
+
+[node name="coin6" parent="coins" instance=ExtResource("3_vldaw")]
+position = Vector2(88, 144)
+
+[node name="coin7" parent="coins" instance=ExtResource("3_vldaw")]
+position = Vector2(136, 176)
 
 [node name="moving_platform" parent="." instance=ExtResource("10_xdjg8")]
 position = Vector2(481, 152)
