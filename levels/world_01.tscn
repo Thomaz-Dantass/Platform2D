@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://n3rmq3iajyxs"]
+[gd_scene load_steps=16 format=3 uid="uid://n3rmq3iajyxs"]
 
 [ext_resource type="Texture2D" uid="uid://dy776ul514iwd" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Terrain (16 x 16).png" id="1_t5t4u"]
 [ext_resource type="Texture2D" uid="uid://dj1bktoafq7hh" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Autumn_entities (16 x 16).png" id="2_5ukit"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://c5xkr0erc22ls" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/3 - Bottom_leaf_piles.png" id="7_1jdbh"]
 [ext_resource type="Texture2D" uid="uid://c76tqpa0fnxqq" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/2 - Trees.png" id="8_8aiml"]
 [ext_resource type="Texture2D" uid="uid://dahymq23c7prq" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/1 - Leaf_top.png" id="9_6r032"]
+[ext_resource type="PackedScene" uid="uid://cwrebahk6ssdx" path="res://prefabs/moving_platform.tscn" id="10_xdjg8"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_4ucv5"]
 tile_data = PackedInt32Array(0, 65537, 1)
@@ -265,6 +266,13 @@ layer_1/y_sort_origin = 0
 layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array(851980, 65537, 5, 983057, 65537, 1, 983068, 65537, 1, 1048603, 196609, 5, 1048605, 196609, 5, 1048594, 196609, 5, 1048592, 196609, 5, 983077, 65537, 1, 1048609, 65537, 5, 983044, 65537, 1, 917526, 65537, 1, 1048617, 917505, 4, 983081, 917505, 3, 983082, 983041, 3, 983083, 1048577, 3, 983084, 1114113, 3, 983085, 1179649, 3, 1048621, 1179649, 4)
 
+[node name="moving_platform" parent="." instance=ExtResource("10_xdjg8")]
+position = Vector2(481, 152)
+
+[node name="moving_platform2" parent="." instance=ExtResource("10_xdjg8")]
+position = Vector2(199, 197)
+move_horizonta = false
+
 [node name="player" parent="." instance=ExtResource("3_c8jcg")]
 position = Vector2(103, 239)
 
@@ -312,7 +320,6 @@ centered = false
 
 [node name="02" type="ParallaxLayer" parent="BG"]
 position = Vector2(0, -29)
-motion_scale = Vector2(0.7, 1)
 motion_mirroring = Vector2(432, 0)
 
 [node name="texture" type="Sprite2D" parent="BG/02"]
