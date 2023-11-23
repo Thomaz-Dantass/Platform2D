@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://n3rmq3iajyxs"]
+[gd_scene load_steps=18 format=3 uid="uid://n3rmq3iajyxs"]
 
 [ext_resource type="Texture2D" uid="uid://dy776ul514iwd" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Terrain (16 x 16).png" id="1_t5t4u"]
 [ext_resource type="Texture2D" uid="uid://dj1bktoafq7hh" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Autumn_entities (16 x 16).png" id="2_5ukit"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://c76tqpa0fnxqq" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/2 - Trees.png" id="8_8aiml"]
 [ext_resource type="Texture2D" uid="uid://dahymq23c7prq" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/1 - Leaf_top.png" id="9_6r032"]
 [ext_resource type="PackedScene" uid="uid://cwrebahk6ssdx" path="res://prefabs/moving_platform.tscn" id="10_xdjg8"]
+[ext_resource type="PackedScene" uid="uid://bd7en2pk3cgeb" path="res://actors/enemy.tscn" id="12_5l661"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_4ucv5"]
 tile_data = PackedInt32Array(0, 65537, 1)
@@ -359,3 +360,9 @@ motion_mirroring = Vector2(432, 0)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("9_6r032")
 centered = false
+
+[node name="enemy" parent="." instance=ExtResource("12_5l661")]
+position = Vector2(247, 272)
+
+[node name="enemy2" parent="." instance=ExtResource("12_5l661")]
+position = Vector2(354, 256)

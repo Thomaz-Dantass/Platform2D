@@ -21,6 +21,10 @@ window/size/viewport_height=320
 window/stretch/mode="viewport"
 window/stretch/scale=2.0
 
+[editor]
+
+run/main_run_args="--rendering-driver opengl3"
+
 [layer_names]
 
 2d_physics/layer_1="player"
